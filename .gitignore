@@ -1,0 +1,10 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+
+# Experiment configurations contain no secrets - keep them in version control
+!experiments/*.tfvars
+mds/
+diagram/
