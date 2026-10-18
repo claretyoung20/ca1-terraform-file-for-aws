@@ -4,11 +4,8 @@
 
 Terraform for a Spring Boot microservices lab on AWS: an ALB in front of an auto-scaled Product service, a Coupon service on EC2, RDS MySQL, S3 and SSM Parameter Store, plus a CloudWatch dashboard and the scaling experiments.
 
-## Commit message
 
 ```
-Add Terraform infrastructure for ca1 microservices on AWS
-
 Provision the full ca1 stack in eu-west-1 as code, replacing the manual
 console steps:
 
@@ -36,3 +33,5 @@ State files and local tfvars are git-ignored, so no state or DB
 password is committed.
 
 ```
+## K6
+- include k6 scripts and user data scripts
