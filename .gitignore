@@ -1,8 +1,32 @@
+# --- OS / IDE ---
+.DS_Store
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.factorypath
+.vscode/
+
+# --- Build output (recreate with: mvn -DskipTests clean package) ---
+target/
+jars/
+*.jar
+
+# --- Python ---
+__pycache__/
+*.pyc
+
+# --- Terraform: state contains the DB password; providers are re-downloadable ---
 .terraform/
 *.tfstate
 *.tfstate.*
+.terraform.tfstate.lock.info
 crash.log
-*.tfvars
+
+# --- Raw load-test results (large; kept on S3 / locally) ---
+results/
+
 
 # Experiment configurations contain no secrets - keep them in version control
 !experiments/*.tfvars
