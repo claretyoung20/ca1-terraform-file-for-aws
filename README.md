@@ -33,5 +33,5 @@ State files and local tfvars are git-ignored, so no state or DB
 password is committed.
 
 ```
-## K6
+## K6 (under ca1-aws)
 - include k6 scripts and user data scripts
